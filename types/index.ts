@@ -1,0 +1,1 @@
+export type {Weather} from './weather.entity'

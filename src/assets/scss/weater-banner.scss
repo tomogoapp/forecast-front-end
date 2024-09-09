@@ -1,0 +1,17 @@
+@media (min-width: 0px) and (max-width: 600px) {
+
+    :deep(.main-container) {
+      height: 150vh;
+    }
+    :deep(.img-weather) {
+      width: 150px !important;
+    }
+    :deep(.max-h1) {
+      font-size: 3.5rem;
+      height: 64px;
+    }
+
+    :deep(.sub-h1) {
+      font-size: 1.5rem;
+    }
+  }
