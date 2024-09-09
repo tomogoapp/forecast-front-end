@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  nuxt-app:
+    image: node:18  # Usamos Node.js 18
+    container_name: nuxt-app
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - '8000:8000'
+    command: yarn dev
+    environment:
+      - HOST=0.0.0.0
+    depends_on:
+      - nuxt-app
+
+volumes:
+  nuxt-app-data:
